@@ -15,3 +15,8 @@ const server = http.createServer((req, res)=>{
 server.listen(3000,()=>{
   console.log('server is started')
 })
+var opn = require('opn');
+
+// opens the url in the default browser
+opn('http://localhost:3000?startwith=УПРАЖНЕНИЯ НА ШЕЮ&externalcall=НА_____ЗАПЛАНИРОВАНА ТРЕНИРОВКА', {app: 'chrome'});
+//opn('http://sindresorhus.com');
